@@ -1,0 +1,161 @@
+
+body {
+    background-image: url('tloo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+.title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.row-1 {
+    margin-top: 30px;
+}
+.row-2{
+    margin-top: 60px;
+}
+.col-lg-4 {
+    text-align: center;
+}
+.luna {
+    transform: rotate(2deg);     
+}
+.luna:hover {
+    transform: rotate(362deg);
+   /* transform: scale(1.1);*/
+    transition:1s;
+}
+.kontakt {
+    margin-top: 75px;
+
+}
+.hocki , .splot , .wata , .luna {
+    width: 275px;
+    height: 360px;
+    -webkit-box-shadow: -2px 2px 6px 4px rgba(0,0,0,0.4); 
+    box-shadow: -2px 2px 6px 4px rgba(0,0,0,0.4);
+}
+.hocki , .splot , .wata {
+    margin-bottom: 40px;
+}
+.hocki {
+    transform: rotate(-2deg);     
+}
+.wata {
+    transform: rotate(2deg);  
+    }
+.fb_luna {
+position: absolute;
+    z-index: 1;
+    left: -90px;
+}
+    .fb_hocki {
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+    right: 0;
+}
+.fb_splot {
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+.fb_wata {
+    position: absolute;
+    z-index: 1;
+    right: -15px;
+    top: -57px;   
+}
+.fb_wata , .fb_splot , .fb_luna , .fb_hocki , .kontakt{
+    transition: 0.5s;
+}
+.fb_hocki:hover , .fb_luna:hover , .fb_splot:hover , .fb_wata:hover , .kontakt:hover {
+    transform: scale(1.1);
+}
+
+.title_mobile {
+    width: 80%;
+}
+.planeta_mobile {
+    width: 100%;
+    /* transform: rotate(45deg); */
+    margin-top: 50px;
+}
+.planeta_container {
+    text-align:center;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 993px){
+   .title_mobile , .kontakt_mobile , .planeta_mobile , .nutka_3 { display: none;}
+    }
+  @media screen and (max-width: 992px){
+   body {
+    background-image: url('tlo_mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    height: 100%;
+} 
+.title_desktop { 
+    display: none;
+}
+.kontakt {
+    display: none;
+}
+.fb_luna {
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    /* transform: translateX(-50%); */
+    bottom: -75px;
+}
+.hocki , .splot , .wata , .luna{
+    margin-top: 50px;
+}
+.wata {
+    margin-bottom: 50px;;
+}
+.fb_hocki {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 78%;
+}
+.fb_splot {
+    left: 50%;
+    top: 81%;
+}
+.fb_wata {    
+    top: 81%;
+    left: 44%;
+}
+.kontakt_mobile {
+    position: absolute;
+    right: 0;
+    width: 22%;
+    z-index: 2;
+    top: 100%;
+}
+    
+
+
+
+
+
+
+
+
+
+
+  }
